@@ -76,3 +76,33 @@ Sort-Merge-Bucket (SMB) Map Join:
 	set hive.optimize.bucketmapjoin.sortedmerge = true;
 	set hive.auto.convert.join=false; // if we do not do this, automatically Map-Side Join will happen
 	
+Hive windowing functions
+	- Windowing allows you to create a window on a set of data further allowing aggregation surrounding that data.
+	- Windowing in Hive is introduced from Hive 0.11.
+	- Lead():
+		- 
+	- Lag():
+	- FIRST_VALUE():
+	- LAST_VALUE():
+	- OVER():
+		- COUNT()
+		- SUM()
+		- MIN() 
+		- MAX()
+		- AVG()
+		- PARTITION BY()
+		
+Hive Analatic Functions:
+	- RANK():
+	- DENSE_RANK():
+	- PERCENT_RANK():
+	- CUME_DIST():
+	- ROW_NUMBER():
+	- NTILE():
+	
+Reference:
+https://acadgild.com/blog/windowing-functions-in-hive
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+WindowingAndAnalytics
+http://shzhangji.com/blog/2017/09/04/hive-window-and-analytical-functions/
+http://dwgeek.com/hadoop-hive-analytic-functions-examples.html/
+http://dwgeek.com/hadoop-hive-conditional-functions-if-case-coalesce-nvl-decode.html/
