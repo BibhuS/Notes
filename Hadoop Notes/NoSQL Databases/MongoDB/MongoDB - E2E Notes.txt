@@ -166,7 +166,7 @@
 
 - _id is a 12 bytes hexadecimal number which assures the uniqueness of every document.
 - You can provide _id while inserting the document.
-- If you don’t provide then MongoDB provides a unique id for every document.
+- If you donÂ’t provide then MongoDB provides a unique id for every document.
 - These 12 bytes 
 	- first 4 bytes for the current timestamp, 
 	- next 3 bytes for machine id, 
@@ -175,7 +175,7 @@
 	
 Data Modeling:
 - Data in MongoDB has a flexible schema.documents in the same collection. 
-- They do not need to have the same set of fields or structure, and common fields in a collection’s documents may hold different types of data.
+- They do not need to have the same set of fields or structure, and common fields in a collectionÂ’s documents may hold different types of data.
 - considerations while designing Schema in MongoDB:
 	- Design your schema according to user requirements.
 	- Combine objects into one document if you will use them together. Otherwise separate them
@@ -198,7 +198,7 @@ Data Modeling:
 	10) Symbol - This datatype is used identically to a string; however, it's generally reserved for languages that use a specific symbol type.
 	11) Date - This datatype is used to store the current date or time in UNIX time format. 
 			 - You can specify your own date time by creating object of Date and passing day, month, year into it.
-	12) Object ID - This datatype is used to store the document’s ID.
+	12) Object ID - This datatype is used to store the documentÂ’s ID.
 	13) Binary data - This datatype is used to store binary data.
 	14) Code - This datatype is used to store JavaScript code into the document.
 	15) Regular expression - This datatype is used to store regular expression.
@@ -272,10 +272,10 @@ Data Modeling:
 		6) $addToSet - Inserts the value to an array in the resulting document but does not create duplicates.
 			- db.mycol.aggregate([{$group : {_id : "$by_user", url : {$addToSet : "$url"}}}])
 		7) $first - Gets the first document from the source documents according to the grouping.
-			  - Typically this makes only sense together with some previously applied “$sort”-stage
+			  - Typically this makes only sense together with some previously applied Â“$sortÂ”-stage
 			  - db.mycol.aggregate([{$group : {_id : "$by_user", first_url : {$first : "$url"}}}])
 		8) $last - Gets the last document from the source documents according to the grouping.
-			 - Typically this makes only sense together with some previously applied “$sort”-stage.
+			 - Typically this makes only sense together with some previously applied Â“$sortÂ”-stage.
 			 - db.mycol.aggregate([{$group : {_id : "$by_user", last_url : {$last : "$url"}}}])
 
 	- Pipeline Concept: In UNIX command, shell pipeline means the possibility to execute an operation on some input and use the output as the input for the next command and so on. 
