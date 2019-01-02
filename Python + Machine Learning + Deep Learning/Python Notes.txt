@@ -519,3 +519,7 @@ Note:
 	-c cmd --> run Python script sent in as cmd string
 	file --> run Python script from given file
 	
+2) Python build in Functions:
+	https://docs.python.org/3/library/functions.html#hash
+	
+	
