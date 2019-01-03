@@ -43,3 +43,11 @@ https://developers.google.com/edu/python/regular-expressions
 
 CANADA PR and IELTS:
 http://ieltsliz.com/ielts-band-scores/
+
+
+Python RegEx:
+https://docs.python.org/3/howto/regex.html
+https://docs.python.org/3.4/library/re.html
+https://www.tutorialspoint.com/python3/python_reg_expressions.htm
+http://www.thelearningpoint.net/computer-science/learning-python-programming-and-data-structures/learning-python-programming-and-data-structures--tutorial-13--regular-expression-matching
+
