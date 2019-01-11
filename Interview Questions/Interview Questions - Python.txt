@@ -20,13 +20,20 @@ What is the difference between deep and shallow copy?
 	- Shallow copy is used when a new instance type gets created and it keeps the values that are copied in the new instance. 
 	- Shallow copy is used to copy the reference pointers just like it copies the values. 
 	- These references point to the original objects and the changes made in any member of the class will also affect the original copy of it. 
-	-  Shallow copy allows faster execution of the program and it depends on the size of the data that is used.
-	
+	- Shallow copy allows faster execution of the program and it depends on the size of the data that is used.
+	Ex:
+		import copy
+		b=copy.copy(a)
+		
 	- Deep copy is used to store the values that are already copied. 
 	- Deep copy doesn’t copy the reference pointers to the objects.
 	- It makes the reference to an object and the new object that is pointed by some other object gets stored.
 	- The changes made in the original copy won’t affect any other copy that uses the object.
 	- Deep copy makes execution of the program slower due to making certain copies for each object that is been called.
+	Ex:
+		import copy
+		b=copy.deepcopy(a)
+		
 	
 How are the functions help() and dir() different?
 	- These are the two functions that are accessible from the Python Interpreter. These two functions are used for viewing a consolidated dump of built-in functions.
@@ -95,7 +102,7 @@ Explain how to overload constructors or methods in Python.
 	- Python’s constructor – _init__ () is a first method of a class. 
 	- Whenever we try to instantiate a object __init__() is automatically invoked by python to initialize members of an object.
 	
-Which statement of Python is used whenever a statement is required syntactically but the program needs no action?
+Which statement of Python is used whenever a statement is required syntactically but the program needs no action? (or) What is pass in Python?
 	- Pass – is no-operation / action statement in Python.
 	- If we want to load a module or open a file, and even if the requested module/file does not exist, we want to continue with other tasks. 
 	- In such a scenario, use try-except block with pass statement in the except block.
@@ -163,8 +170,14 @@ What are the built-in type does python provides?
 	
 What is the difference between list and tuples?
 	- Lists are mutable i.e they can be edited. Syntax: list_1 = [10, ‘Chelsea’, 20]
+	- Lists can’t be utilized as a key in a dictionary.
 	- Tuples are immutable (tuples are lists which can’t be edited). Syntax: tup_1 = (10, ‘Chelsea’ , 20)
 	- Tuple can be hashed
+	- to create tuple {}, to create list []
+	- Tuples are varied data structures (i.e., their entries contain diverse implications), whereas lists are uniform series.
+	- Tuples are for fixed length, lists are for uneven length.
+	- Tuples illustrate structure while lists illustrate order.
+	- Tuples contain O(N) insert, append, and delete performance while Lists contain O(1) insert, append, and delete performance.
 	
 What is dictionary in Python?
 	- The built-in datatypes in Python is called dictionary. 
@@ -300,13 +313,15 @@ What is a Class? How do you create it in Python?
 	- Note: whenever you define a method inside a class, the first argument to the method must be self (where self – is a pointer to the class instance). 
 	- self must be passed as an argument to the method, though the method does not take any arguments.
 
-What are Exception Handling? How do you achieve it in Python?
-	- 
+How do you achieve it in Python?
+	- Python uses its own techniques to implement exception handling.
+	- <try-except> is the block that can be utilized by the programmer to view any type of error details without having to end the program. 
+	- Additionally, in a few cases, this <try-except> statement provides a solution to handle the error.
 	
 Explain Inheritance in Python with an example.
 	- Inheritance allows One class to gain all the members(say attributes and methods) of another class.
 	- Inheritance provides code reusability, makes it easier to create and maintain an application.
-	- The class from which we are inheriting is called super-class and the class that is inherited is called a derived / child class.
+	- The class from which we are inheriting is called super-class / ancestors and the class that is inherited is called a derived / child class.
 	- There are different types of inheritance supported by Python.
 	- They are: 
 		single, 
@@ -340,6 +355,9 @@ How instance variables are different from class variables?
 	- They are accessed with their class name alone as “class- name.classvariable-name”.
 	- If you change the value of a class variable in one object, its new value is visible among all other objects of the same class. 
 	- In the Java world, a variable that is declared as static is a class variable.
+	
+	- Class variables can be obtained anywhere in the class while an instance variable can be obtained in a specific object of the class.
+	
 	
 How is Inheritance and Overriding methods are related?) 
 	- If class A is a sub class of class B, then everything in B is accessible in /by class A.
@@ -419,6 +437,24 @@ Name few Python Web Frameworks for developing web applications?
 	cherryPy – it is a Python-based Object oriented Web framework.
 	Flask – it is a Python-based micro-framework for designing and developing web applications.
 	
+Specify the differences between Pyramid, Django, and Flask.
+	Here are some of the considerable differences:
+	- There are basically two frameworks available in the Python programming that are mainly
+	- Major Frameworks: pyramid and Django
+	- Minor Frameworks: flask and Bottle
+	
+	- Flask:
+		it is a “microframework” that is built with simpler applications that are on primary basis. 
+		Flask uses external libraries and is always ready to use.
+	- Pyramid:
+		it is generally built for larger applications.
+		it provides a lot of flexibility and allows the developer to use the right kind of tools for the project, which makes it developer friendly.
+		The developer can easily choose the database, template style, URL structure, and much more.
+		Pyramid is heavily configurable.
+	- Django:
+		it can be also used for larger applications just like Pyramid. 
+		It basically includes an ORM.
+	
 How can you generate random numbers in Python?
 	- Random module is the standard module that is used to generate the random number. 
 		import random
@@ -484,7 +520,13 @@ How can the ternary operators be used in python?
 	- The Ternary operator is the operator that is used to show the conditional statements.
 	- This consists of the true or false values with a statement that has to be evaluated for it.
 	- The Ternary operator will be given as:
-		[on_true] if [expression] else [on_false]x, y = 25, 50big = x if x < y else y
+		[on_true] if [expression] else [on_false]x, y = 25, 50 
+		big = x if x < y else y
+		
+	Ex:
+		print("Equal") if 5==5 else print("Not equal")
+		or
+		5!=5 and 'Equal' or 'Not equal'
 
 Explain the use of decorators.
 	- Decorators in Python are used to modify or inject code in functions or classes. 
@@ -500,6 +542,9 @@ What are the tools that help to find bugs or perform static analysis?
 	
 What is lambda in Python?
 	- It is a single expression anonymous function often used as inline function.
+	- It behaves like a function without function name.
+	Ex:
+		Cube = lambda x : x * x * x
 	
 Why lambda forms in python does not have statements?
 	- A lambda form in python does not have statements as it is used to make new function object and then return them at runtime.
@@ -514,12 +559,19 @@ In Python what is slicing?
 What are generators in Python?
 	- The way of implementing iterators are known as generators. 
 	- It is a normal function except that it yields expression in the function.
+	
+	- Generators are used in python to return an iterable object. 
+	- It is used to modify the behavior of the loop statement.
+	- Loops can be replaced with generators to perform on large dataset efficiently.
 
 How can you copy an object in Python?
 	- To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
 	
 What is docstring in Python?
 	- A Python documentation string is known as docstring, it is a way of documenting Python functions, modules and classes.
+	
+What is the use of ‘self’ keyword in python?
+	- In python ‘self’ references the instance of the class.
 
 How can you share global variables across modules?
 	- To share global variables across modules within a single program, create a special module.
@@ -530,7 +582,10 @@ Explain how can you access a module written in Python from C?
 	- Module =  =PyImport_ImportModule(“<modulename>”);
 	
 What is monkey patching in Python?
-	-  In Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time.
+	- Monkey patching is a concept by which we can change the function behavior in runtime.
+	- Due to the dynamic nature of the python, we can replace the body of a class function to new one. 
+	- It is very useful in testing the python application.
+	- In Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time.
 	# m.py
 		class MyClass:
 		def f(self):
@@ -539,7 +594,7 @@ What is monkey patching in Python?
 	import m
 	def monkey_f(self):
 		print "monkey_f()"
-	m.MyClass.f = monkey_f
+	m.MyClass.f = monkey_f	# this line is known as Monkey patching, changing the feature dynamically.
 	obj = m.MyClass()
 	obj.f()
 
@@ -677,9 +732,106 @@ Looking at the below code, write down the final values of A0, A1, …An.
 	A6 = [[i,i*i] for i in A1]
 	print(A0,A1,A2,A3,A4,A5,A6)
 	
+What is the use of try, except, finally and raise in Error Handling.
+	- Python makes use of try, except and finally blocks for error handling. 
+	- Try block is used to execute the code until an error occurs.
+	- We can make use of an except block to receive control which will receive control after all errors, or one can use specific exception handling blocks for
+	various error types. 
+	- Control is transferred to the appropriate except block. In all cases, the finally block is executed. Raise may be used to raise your own exceptions.
+	
+Shade some light on the modes in Python Programming Environment.
+	Basically there are 2 types of modes in python programming that are:
+	- Interactive Mode: 
+		This mode can be eventually taken up as a scratchpad that can be used to check out the codes in the Python Environment.
+	- Script Mode:
+		The script mode is basically used to save or compile the programs of Python that is rarely possible in the Interactive mode. To make such programs executable, the Script Mode is preferred.
+		
+What is a module and package in Python?
+	- Modules can be defined as the Python files with an extension “.py”. 
+	- The module name will be same as that of the file name. 
+	- A Python module can own a collection of classes, functions or variables defined as well as applied.
+	
+	- Packages are namespaces which has various packages and modules themselves.
+	- They are merely directories.
+	- Every package in Python programming language is a directory which should have a special file known as _init_.py.
+	- This file can be void and it shows that the directory it consists is a Python package.
+	- This can be imported similar to the module which can be imported.
+	
+
+How do you avoid cyclic imports without resorting to imports in functions?
+	- Refactoring your code is one of the solution to this kind of problem. 
+	- You could restructure functions into different modules, which will clean up everything along with this particular issue.
+	
+How to read a 10GB (or larger) file size in python?
+	- If you had to open large files, you could operate on chunks, and not one byte at a time. 
+	- To be precocious, make sure RAM of the target machine is enough How are you operating on the file?
+	- What are you returning from the file?
+	- In what pattern are you accessing the date on the file (like maybe in random sampling or using some serialized mechanism)?
+	
+What are docstrings and comments?
+	- Docstring refers to documentation string for a function.
+	- It must be defined at first, within a function that defines it.
+	- Though there’s not much difference between the two, one could put it this way– Docstrings are for documentation, however, comments are for code readers/reviewers.
+	
+What are “special” methods in python?
+	- Few methods like str and gt are examples of the special method.
+	- They override the behavior of other global functions/operators and will be used with the with keyword.
+	- Overriding those functions might lead to unintended behaviors in a dynamic language like Python, thus, they are meant to be used very carefully.
+
+Explain garbage collection in Python ?
+	- Garbage collection generally depends on which implementation.
+	- In particular, CPython uses reference counting, and a creative cyclic collector that’s both generational and utilizes its reference count itself to detect continuously iterating loops or cycles.
+	
+What is use of @classmethod, @staticmethod, @property in Python?
+	- 
+	
+What are Iterators in Python?
+	- 
+	
+What is the difference between append() and extend() method in Python?
+	- 
+	
+What is a closure in Python?
+	- A closure is said to occur when a nested function references a value in its enclosing scope.
+	- The whole point here is that it remembers the value.
+	Ex:
+		def A(x):
+			def B():
+				def B():
+			return B
+		A(7)()
+		
+Explain identity operators in Python.
+	- The operators ‘is’ and ‘is not’ tell us if two values have the same identity.
+	Ex:
+		10 is '10'
+		True is not False
+		
+Why are identifier names with a leading underscore disparaged?
+	- Since Python does not have a concept of private variables, it is a convention to use leading underscores to declare a variable private.
+	- This is why we mustn’t do that to variables we do not want to make private.
+	
+What is tuple unpacking?
+	- First, let’s discuss tuple packing. It is a way to pack a set of values into a tuple.
+	Ex:
+		mytuple=3,4,5
+		mytuple
+		
+		(3, 4, 5)
+		
+	- This packs 3, 4, and 5 into mytuple.
+	- Now, we will unpack the values from the tuple into variables x, y, and z.
+	Ex:
+		x,y,z=mytuple
+		x+y+z
+		
+		12
+		
+	
 Note:
 What is Web Scraping? How do you achieve it in Python?
 	- Web Scrapping is a way of extracting the large amounts of information which is available on the web sites and saving it onto the local machine or onto the database tables.
 	- In order to scrap the web:load the web page which is interesting to you. To load the web page, use “requests” module.
 	- parse HTML from the web page to find the interesting information.
 	- Python has few modules for scraping the web. They are urllib2, scrapy, pyquery, BeautifulSoap, etc.
+	
