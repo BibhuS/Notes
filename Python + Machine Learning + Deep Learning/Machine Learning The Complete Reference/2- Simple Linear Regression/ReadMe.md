@@ -68,10 +68,10 @@
 <p align="center">
 	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
 </p> 
-  - <b>y<sub>i</sub></b> - observed response for experimental unit <i>i</i>    
-  - **x<sub>i</sub>** - predictor value for experimental unit *i*    
-  - **<b>y&#770;<sub>i</sub></b>** - predicted response (or fitted value) for experimental unit *i*    
-  - **<i>b</i><sub>0</sub>** - Intercept point, where **y<sub>i</sub>** meets **x**    
+- <b>y<sub>i</sub></b> - observed response for experimental unit <i>i</i>    
+- <b>x<sub>i</sub></b> - predictor value for experimental unit <i>i</i>    
+- <b>y&#770;<sub>i</sub></b> - predicted response (or fitted value) for experimental unit <i>i</i>    
+- <b><i>b</i><sub>0</sub></b> - Intercept point, where <b>y<sub>i</sub></b> meets <b>x</b>    
 <p align="center">
   	<img width="502" height="333" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
 </p>
