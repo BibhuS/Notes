@@ -65,10 +65,14 @@
 - A straight line will result from a simple linear regression analysis of two or more independent variables.
 - Since we are interested in summarizing the trend between two quantitative variables, we have to Find the Best-Fitting line for our equation.
 - Equation for Best-Fit Line:
+
+
 <p align="center">
 	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
 </p> 
-- <b>y<sub>i</sub></b> observed response for experimental unit <i>i</i>    
+
+
+- <b>y<sub>i</sub></b> observed response for experimental unit <i>i</i>        
 - <b>x<sub>i</sub></b> predictor value for experimental unit <i>i</i>    
 - <b>y&#770;<sub>i</sub></b> predicted response (or fitted value) for experimental unit <i>i</i>    
 - <b><i>b</i><sub>0</sub></b> Intercept point, where <b>y<sub>i</sub></b> meets <b>x</b>    
