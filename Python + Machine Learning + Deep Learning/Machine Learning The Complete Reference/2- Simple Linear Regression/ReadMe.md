@@ -68,13 +68,13 @@
 <p align="center">
 	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
 </p> 
-  - <b>y<sub>i</sub></b> - observed response for experimental unit *i*    
+  - <b>y<sub>i</sub></b> - observed response for experimental unit <i>i</i>    
   - **x<sub>i</sub>** - predictor value for experimental unit *i*    
   - **<b>y&#770;<sub>i</sub></b>** - predicted response (or fitted value) for experimental unit *i*    
   - **<i>b</i><sub>0</sub>** - Intercept point, where **y<sub>i</sub>** meets **x**    
 <p align="center">
-  	<img width="502" height="333" src="https://newonlinecourses.science.psu.edu/stat501/sites/onlinecourses.science.psu.edu.stat501/files/01simple/heightweight/index.jpg">
-  </p>
+  	<img width="502" height="333" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
+</p>
 - For Example:    
   	- lets find the **y&#770;<sub>i</sub>** for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means **x<sub>i</sub> = 63** and **y<sub>i</sub> = 127**. then the **y&#770;<sub>i</sub> = 120.1**(by applying **w = -266.53 + 6.1376 h** formula).
 	- in the above Example the Predicted value is not accurate it has some difference on it which is known as **"prediction error"** (or **"residual error"**). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
