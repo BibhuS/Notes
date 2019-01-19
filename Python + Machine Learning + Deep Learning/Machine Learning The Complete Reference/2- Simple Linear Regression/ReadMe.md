@@ -68,7 +68,7 @@
 
 
 <p align="center">
-	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
+	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b>
 </p> 
 
 
@@ -78,13 +78,14 @@
 - <b><i>b</i><sub>0</sub></b> Intercept or Constant, where line crosses the Vertical axis  
 	- Formula to find Intercept:
 <p align="center">
-<img width="130" height="48" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Intercept.JPG?raw=true">
+	<img width="130" height="48" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Intercept.JPG?raw=true">
 </p>
 
 - <b><i>b</i><sub>1</sub></b> Slope of the line
 	- Formula to find Slope of the Line:
+	- Here <b>X&#772;</b> is the Mean of X, and <b>y&#772;</b> is the Mean of y
 <p align="center">
-<img width="226" height="77" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Slope.JPG?raw=true">
+	<img width="226" height="77" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Slope.JPG?raw=true">
 </p>
 
 - For Example: Lets try out the Student Height and Weight problem [dataset.csv](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/Book1.csv)
@@ -98,7 +99,7 @@
 	
 <p align="center">
   	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%201%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
-<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%202%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
+	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%202%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
 </p>
 
 
@@ -106,13 +107,15 @@
 - If we didn't know the weight of student 5, the equation of the line would predict his or her weight to be -266.53 + 6.1376(69) or 157 pounds.
 - The size of the prediction error here is 162-157, or 5 pounds.
 - Keep in mind the thumb rule A line that fits the data "best" will be one for which the n prediction errors are as small as possible in some overall sense.
+<p align="center">
+  	<img width="157" height="78" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
+</p>
+
 - One way to achieve this goal is to invoke the "least squares criterion," which says to "minimize the sum of the squared prediction errors." 
 
 
 ##### Quick Review:    
 - Simple Linear Regression is really a comparison of 2 models    
-	- when Independent Variable does not Exists
-	- use the Best-Fitting Line to determine Relationship(trend) between 2 Variables
 
 ##### Reference URL:    
   [To Understand Concepts Behind SLR - Site](https://newonlinecourses.science.psu.edu/stat501/node/250/)    
