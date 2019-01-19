@@ -68,7 +68,7 @@
 <p align="center">
 	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
 </p> 
-- **y<sub>i</sub>** - observed response for experimental unit *i*    
+- <b>y<sub>i</sub></b> - observed response for experimental unit *i*    
 - **x<sub>i</sub>** - predictor value for experimental unit *i*    
 - **<b>y&#770;<sub>i</sub></b>** - predicted response (or fitted value) for experimental unit *i*
 - **<i>b</i><sub>0</sub>** - Intercept point, where **y<sub>i</sub>** meets **x**
