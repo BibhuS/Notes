@@ -68,10 +68,10 @@
 <p align="center">
 	<b>y&#770;<sub>i</sub> = <i>b</i><sub>0</sub> + <i>b</i><sub>1</sub><i>x</i></b><br>
 </p> 
-- <b>y<sub>i</sub></b> - observed response for experimental unit *i*    
-- **x<sub>i</sub>** - predictor value for experimental unit *i*    
-- **<b>y&#770;<sub>i</sub></b>** - predicted response (or fitted value) for experimental unit *i*
-- **<i>b</i><sub>0</sub>** - Intercept point, where **y<sub>i</sub>** meets **x**
+  - <b>y<sub>i</sub></b> - observed response for experimental unit *i*    
+  - **x<sub>i</sub>** - predictor value for experimental unit *i*    
+  - **<b>y&#770;<sub>i</sub></b>** - predicted response (or fitted value) for experimental unit *i*    
+  - **<i>b</i><sub>0</sub>** - Intercept point, where **y<sub>i</sub>** meets **x**    
 <p align="center">
   	<img width="502" height="333" src="https://newonlinecourses.science.psu.edu/stat501/sites/onlinecourses.science.psu.edu.stat501/files/01simple/heightweight/index.jpg">
   </p>
