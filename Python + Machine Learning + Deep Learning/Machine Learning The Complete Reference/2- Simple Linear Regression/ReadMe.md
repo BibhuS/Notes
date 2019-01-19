@@ -75,20 +75,27 @@
 - <b>y<sub>i</sub></b> observed response for experimental unit <i>i</i>        
 - <b>x<sub>i</sub></b> predictor value for experimental unit <i>i</i>    
 - <b>y&#770;<sub>i</sub></b> predicted response (or fitted value) for experimental unit <i>i</i>    
-- <b><i>b</i><sub>0</sub></b> Intercept point, where <b>y<sub>i</sub></b> meets <b>x</b>    
+- <b><i>b</i><sub>0</sub></b> Intercept or Constant, where line crosses the Vertical axis  
+- <b><i>b</i><sub>1</sub></b> Slope of the line
+
 <p align="center">
-  	<img width="502" height="333" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
+  	<img width="502" height="335" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
 </p>
+
 - For Example:    
-  	- lets find the **y&#770;<sub>i</sub>** for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means **x<sub>i</sub> = 63** and **y<sub>i</sub> = 127**. then the **y&#770;<sub>i</sub> = 120.1**(by applying **w = -266.53 + 6.1376 h** formula).
-	- in the above Example the Predicted value is not accurate it has some difference on it which is known as **"prediction error"** (or **"residual error"**). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
-	- Find **y&#770;<sub>i</sub>** for the remaining values in below chat.
-	<p align="center">
-  	<img width="502" height="333" src="https://newonlinecourses.science.psu.edu/stat501/sites/onlinecourses.science.psu.edu.stat501/files/01simple/heightweight/index.jpg">
-    </p>
-	- As you can see, the size of the prediction error purely depends on the data point.
-	- If we didn't know the weight of student 5, the equation of the line would predict his or her weight to be -266.53 + 6.1376(69) or 157 pounds.
-	- The size of the prediction error here is 162-157, or 5 pounds.
+  	- lets find the <b>y&#770;<sub>i</sub></b> for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means <b>x<sub>i</sub> = 63</b> and <b>y<sub>i</sub> = 127</b>. then the <b>y&#770;<sub>i</sub> = 120.1</b>(by applying <b>w = -266.53 + 6.1376 h</b> formula).
+	- in the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
+	- Find <b>y&#770;<sub>i</sub></b> for the remaining values in below chat.
+	
+<p align="center">
+  	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%201%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
+<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%202%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
+</p>
+
+
+- As you can see, the size of the prediction error purely depends on the data point.
+- If we didn't know the weight of student 5, the equation of the line would predict his or her weight to be -266.53 + 6.1376(69) or 157 pounds.
+- The size of the prediction error here is 162-157, or 5 pounds.
 - Keep in mind the thumb rule A line that fits the data "best" will be one for which the n prediction errors are as small as possible in some overall sense.
 - One way to achieve this goal is to invoke the "least squares criterion," which says to "minimize the sum of the squared prediction errors." 
 
