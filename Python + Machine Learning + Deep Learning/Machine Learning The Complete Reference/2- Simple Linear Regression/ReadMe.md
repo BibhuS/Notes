@@ -49,7 +49,7 @@
 
 ###### 2.1.2 - Statistical Relationships:
 - In statistical relationship, the relationship between the variables is not perfect.
-- The below example illustrate the relationship between response variable y is the mortality due to skin cancer (number of deaths per 10 million people) and the predictor variable x is the latitude (degrees North) at the center of each of 49 states in the U.S. [(dataset.txt)](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/SkinCancer.csv)    
+- The below example illustrate the relationship between response variable y is the mortality due to skin cancer (number of deaths per 10 million people) and the predictor variable x is the latitude (degrees North) at the center of each of 49 states in the U.S. [(dataset.csv)](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/SkinCancer.csv)    
   <p align="center">
   	<img width="502" height="333" src="https://newonlinecourses.science.psu.edu/stat501/sites/onlinecourses.science.psu.edu.stat501/files/01simple/scatterplot_skin_cancer/index.png">
   </p>
@@ -76,16 +76,24 @@
 - <b>x<sub>i</sub></b> predictor value for experimental unit <i>i</i>    
 - <b>y&#770;<sub>i</sub></b> predicted response (or fitted value) for experimental unit <i>i</i>    
 - <b><i>b</i><sub>0</sub></b> Intercept or Constant, where line crosses the Vertical axis  
-- <b><i>b</i><sub>1</sub></b> Slope of the line
-
+	- Formula to find Intercept:
 <p align="center">
-  	<img width="502" height="335" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
+<img width="130" height="48" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Intercept.JPG?raw=true">
 </p>
 
-- For Example:    
-  	- lets find the <b>y&#770;<sub>i</sub></b> for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means <b>x<sub>i</sub> = 63</b> and <b>y<sub>i</sub> = 127</b>. then the <b>y&#770;<sub>i</sub> = 120.1</b>(by applying <b>w = -266.53 + 6.1376 h</b> formula).
-	- in the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
-	- Find <b>y&#770;<sub>i</sub></b> for the remaining values in below chat.
+- <b><i>b</i><sub>1</sub></b> Slope of the line
+	- Formula to find Slope of the Line:
+<p align="center">
+<img width="226" height="77" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Slope.JPG?raw=true">
+</p>
+
+- For Example: Lets try out the Student Height and Weight problem [dataset.csv](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/Book1.csv)
+<p align="center">
+  	<img width="502" height="335" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
+</p>    
+- lets find the <b>y&#770;<sub>i</sub></b> for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means <b>x<sub>i</sub> = 63</b> and <b>y<sub>i</sub> = 127</b>. then the <b>y&#770;<sub>i</sub> = 120.1</b>(by applying <b>w = -266.53 + 6.1376 h</b> formula).
+- in the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
+- Find <b>y&#770;<sub>i</sub></b> for the remaining values in below chat.
 	
 <p align="center">
   	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%201%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
