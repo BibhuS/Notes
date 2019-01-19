@@ -91,6 +91,7 @@
 <p align="center">
   	<img width="502" height="335" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
 </p>    
+
 - lets find the <b>y&#770;<sub>i</sub></b> for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means <b>x<sub>i</sub> = 63</b> and <b>y<sub>i</sub> = 127</b>. then the <b>y&#770;<sub>i</sub> = 120.1</b>(by applying <b>w = -266.53 + 6.1376 h</b> formula).
 - in the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
 - Find <b>y&#770;<sub>i</sub></b> for the remaining values in below chat.
