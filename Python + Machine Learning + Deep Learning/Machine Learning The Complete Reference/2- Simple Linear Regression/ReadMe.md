@@ -146,8 +146,9 @@
 </p>
 
 
-##### Quick Review:    
-- Simple Linear Regression is really a comparison of 2 models    
+### 5 - Simple Linear Regression in Python:
+- [How to write your First Program in Python](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Simple%20Linear%20Regression%20in%20Python.md)
+      
 
 ##### Reference URL:    
   [To Understand Concepts Behind SLR - Site](https://newonlinecourses.science.psu.edu/stat501/node/250/)    
