@@ -159,4 +159,5 @@
 
 ##### Reference URL:    
   [To Understand Concepts Behind SLR - Site](https://newonlinecourses.science.psu.edu/stat501/node/250/)    
-  [To Understand Concepts Behind SLR - Video](https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi)
+  [To Understand Concepts Behind SLR - Video](https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi)    
+  [Use-case Solution Reference](https://github.com/ManikandanJeyabal/Workplace/tree/master/DataScience/Regression/Simple%20Linear%20Regression/)
