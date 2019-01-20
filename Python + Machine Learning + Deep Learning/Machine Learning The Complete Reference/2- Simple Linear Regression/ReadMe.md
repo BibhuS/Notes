@@ -24,7 +24,7 @@
 - There are two types of relationships available one is  **deterministic (or functional) relationships** and second one is **statistical relationships**, simple linear regression will deals with second one.
 	
 ###### 2.1.1 - Deterministic (or Functional) Relationships:
-- one of the simple example to define deterministic relationship is the relationship between Celsius and Fahrenheit.
+- One of the simple example to define deterministic relationship is the relationship between Celsius and Fahrenheit.
 - Please find the below data points to understand the relationship.
 - In deterministic relationships, the equation exactly describes the relationship between the two variables.
 
@@ -33,13 +33,13 @@
 </p>
 	
 
-- Note that the observed (x, y) data points fall directly on a line. As you may remember, the relationship between degrees Fahrenheit and degrees Celsius is known to be:
+- Not: that the observed (x, y) data points fall directly on a line. As you may remember, the relationship between degrees Fahrenheit and degrees Celsius is known to be:
 
 <p align="center">
 	<b>Fahr = 9/5 Cels + 32</b><br>
 </p>
 
--  If you know the temperature in degrees Celsius, you can use this equation to determine the temperature in degrees Fahrenheit exactly.
+- If you know the temperature in degrees Celsius, you can use this equation to determine the temperature in degrees Fahrenheit exactly.
 - For each of these deterministic relationships, the equation exactly describes the relationship between the two variables.
 - Some other examples of deterministic relationships:    
   - Circumference = π × diameter
@@ -64,8 +64,8 @@
 - In Definition, Line of best fit refers to a line through a scatter plot of data points that best expresses the relationship between those points.
 - A straight line will result from a simple linear regression analysis of two or more independent variables.
 - Since we are interested in summarizing the trend between two quantitative variables, we have to Find the Best-Fitting line for our equation.
-- the Best-Fitting line must pass through the **Centroid**, (The point where the Mean of X and Mean of y meets each other)
-- Equation for Best-Fit Line:
+- The Best-Fitting line must pass through the **Centroid**, (The point where the Mean of X and Mean of y meets each other)
+- Equation for Best-Fit Line (or) Simple Linear Regression equation:
 
 
 <p align="center">
@@ -73,10 +73,10 @@
 </p> 
 
 
-- <b>y<sub>i</sub></b> observed response for experimental unit <i>i</i>        
-- <b>x<sub>i</sub></b> predictor value for experimental unit <i>i</i>    
-- <b>y&#770;<sub>i</sub></b> predicted response (or fitted value) for experimental unit <i>i</i>    
-- <b><i>b</i><sub>0</sub></b> Intercept or Constant, where line crosses the Vertical axis  
+- <b>y<sub>i</sub></b> is known as observed response for experimental unit <i>i</i>        
+- <b>x<sub>i</sub></b> is known as predictor value for experimental unit <i>i</i>    
+- <b>y&#770;<sub>i</sub></b> is known as predicted response (or fitted value) for experimental unit <i>i</i>    
+- <b><i>b</i><sub>0</sub></b> is known as the Intercept or Constant, where line crosses the Vertical axis  
 	- Formula to find Intercept:
 <p align="center">
 	<img width="130" height="48" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Intercept.JPG?raw=true">
@@ -89,30 +89,61 @@
 	<img width="226" height="77" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/Slope.JPG?raw=true">
 </p>
 
-- For Example: Lets try out the Student Height and Weight problem [dataset.csv](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/Book1.csv)
-<p align="center">
-  	<img width="502" height="335" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Best%20Fit%20Line%20-%20trend%20between%20Height%20and%20Weight.jpg?raw=true">
-</p>    
+- If you want to find Intercept first you need to find Slope value then you can determine the intercept point.
+- Steps to Remember when you are summarizing SLR, you have to follow these steps        
+	- Find Mean <b>X&#772;</b> of Independent Variable <b>X</b>.
+	- Find Mean <b>y&#772;</b> of Dependent Variable <b>y</b>.
+	- Find Slope <b><i>b</i><sub>1</sub></b>.
+	- Find Intercept <b><i>b</i><sub>0</sub></b>.
+	- Finally find Best-Fit Line <b>y&#770;<sub>i</sub></b>.
 
-- lets find the <b>y&#770;<sub>i</sub></b> for the first data point in the list indicates that student 1 is 63 inches tall and weighs 127 pounds. that means <b>x<sub>i</sub> = 63</b> and <b>y<sub>i</sub> = 127</b>. then the <b>y&#770;<sub>i</sub> = 120.1</b>(by applying <b>w = -266.53 + 6.1376 h</b> formula).
-- in the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>). In fact, the size of its prediction error is 127-120.1 or 6.9 pounds.
-- Find <b>y&#770;<sub>i</sub></b> for the remaining values in below chat.
-	
+##### 3.1 - Example: 
+- The data-set used here is Bill Amount (vs) Tip Amount data-set [BillvsTip.csv](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/BillTip.csv), we are going to predict the Best-Fit line for the problem.    
+- Please refer the below chat to find the solution for each step, which will give us the value for <b><i>b</i><sub>1</sub></b> Slope is <b>0.146</b> and value for <b><i>b</i><sub>0</sub></b> Intercept is <b>-0.802</b>
+
 <p align="center">
-  	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%201%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
-	<img width="502" height="432" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular%20-%202%20-%20sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
+  	<img width="906" height="178" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/Tabular-BillvsTip.JPG?raw=true">
 </p>
 
+- By obtaining the values for <b><i>b</i><sub>1</sub></b> and <b><i>b</i><sub>0</sub></b> we can now find the Best-Fit line of our problem, please find the below image. and we can see here our Best-Fit line of the prediction line is passing through the <b>Centroid (74, 10)</b>.
 
+<p align="center">
+  	<img width="419" height="296" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/BillvsTip.JPG?raw=true">
+</p>
+
+- Since the SLR will tell you the statistical relationship between two variables which is not perfect. we can see some Error in our Model
+- In the above Example the Predicted value is not accurate it has some difference on it which is known as <b>"prediction error"</b> (or <b>"residual error"</b>).
 - As you can see, the size of the prediction error purely depends on the data point.
-- If we didn't know the weight of student 5, the equation of the line would predict his or her weight to be -266.53 + 6.1376(69) or 157 pounds.
-- The size of the prediction error here is 162-157, or 5 pounds.
-- Keep in mind the thumb rule A line that fits the data "best" will be one for which the n prediction errors are as small as possible in some overall sense.
+- The size of the prediction error here is for <b>X<sub>1</sub></b> is 5 - 4.12 = 0.8.
+- Now we have our predicted values in our hand so what is the next step, there is a thumb rule in summarizing the Best-Fit line and that is "always minimize the sum of the squared prediction errors". One way to achieve this goal is to invoke the "least squares criterion".
+- So keep in mind the thumb rule, a line that fits the data "best" will be one for which the n prediction errors are as small as possible in some overall sense.
+- Formula to Sum of Squared Error or Sum of Squared Residual is:
+
 <p align="center">
   	<img width="157" height="78" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
 </p>
+ 
+### 4 - Coefficient of Determination, r-squared:
+- Now we got the information need to calculate the Coefficient of our prediction.
+- <b>SSR</b> is the "regression sum of squares" and quantifies how far the estimated sloped regression line, <b>y&#770;<sub>i</sub></b>, is from the horizontal "no relationship line," the sample mean or <b>y&#772;</b>.
+- <b>SSE</b> is the "error sum of squares" and quantifies how much the data points y<sub>i</sub>, vary around the estimated regression line, y&#770;<sub>i</sub>
+- <b>SST</b> is the "total sum of squares" and quantifies how much the data points, y<sub>i</sub> vary around their mean, <b>y&#772;</b>
+- Note:
+	- <b>SSR => (y&#770;<sub>i</sub> - <b>y&#772;</b>)<sup>2</sup> => 89.925</b>
+	- <b>SSE => (y<sub>i</sub> - <b>y&#770;<sub>i</sub></b>)<sup>2</sup> => 30.075</b>
+	- <b>SST => (y<sub>i</sub> - <b>y&#772;</b>)<sup>2</sup> => 120</b>
+	- <b>SST = SSE + SSR => 30.075 + 89.925 = 120</b>
 
-- One way to achieve this goal is to invoke the "least squares criterion," which says to "minimize the sum of the squared prediction errors." 
+- Formula to find <b>r<sup>2</sup></b>:
+	- <b>r<sup>2</sup> = SSR/SST => 89.925/120 = 0.749</b>
+	- This is know ans the Accuracy of Our Prediction.
+
+##### 4.1 - Model Summary:
+- Please find the Model summary for our Prediction problem below.
+
+<p align="center">
+  	<img width="562" height="347" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/References/BillvsTipSummary.JPG?raw=true">
+</p>
 
 
 ##### Quick Review:    
