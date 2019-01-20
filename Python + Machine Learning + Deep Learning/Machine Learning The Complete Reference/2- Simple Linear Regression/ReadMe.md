@@ -64,6 +64,7 @@
 - In Definition, Line of best fit refers to a line through a scatter plot of data points that best expresses the relationship between those points.
 - A straight line will result from a simple linear regression analysis of two or more independent variables.
 - Since we are interested in summarizing the trend between two quantitative variables, we have to Find the Best-Fitting line for our equation.
+- the Best-Fitting line must pass through the **Centroid**, (The point where the Mean of X and Mean of y meets each other)
 - Equation for Best-Fit Line:
 
 
