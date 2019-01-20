@@ -148,7 +148,14 @@
 
 ### 5 - Simple Linear Regression in Python:
 - [How to write your First Program in Python](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Simple%20Linear%20Regression%20in%20Python.md)
-      
+- If you completed the above step, Congrats you have created your first machine learning model using Python.
+- Still worried how it is a machine learning ? here is your answer, in the above program you have created a model(machine) that learned from its input IV and predicted result.
+
+### 6 - Additional Use-cases:
+1) Create a Machine Learning Model in Python to summarize trend between [Employee Yrs of Experience (vs) Salary]. [[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/Salary_Data.csv)   
+2) Create a Machine Learning Model in Python to summarize trend between [Latitude (vs) Skin Cancer Morality].
+[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/SkinCancer.csv)    
+3) Create a Machine Learning Model in Python to summarize trend between [Height (vs) Weight].[[Dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-%20Simple%20Linear%20Regression/Dataset/Book1.csv)
 
 ##### Reference URL:    
   [To Understand Concepts Behind SLR - Site](https://newonlinecourses.science.psu.edu/stat501/node/250/)    
