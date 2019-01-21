@@ -4,9 +4,9 @@
 - I am going to take you step by step to the world of Machine Learning, With every tutorial in this course you will develop new skills and improve your understanding in Machine Learning.
 - Moreover, the course is packed with practical exercises which are based on real-life examples. So not only will you learn the theory, but you will also get some hands-on practice building your own models and use-cases.
 - The course is structured the following way:
-	1. Data Pre-processing
- 	2. Regression 
-	 	1. Simple Linear Regression
+	1. [Data Pre-processing]((https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/))
+ 	2. Regression Models
+	 	1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression)
 	 	2. Multiple Linear Regression
 	 	3. Polynomial Regression
 	 	4. SVR
