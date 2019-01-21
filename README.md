@@ -4,11 +4,12 @@
 - Additionally it contains course materials that i have created on my own, Kindly request you to use and share this Repository for your Educational purpose.
 
 # Machine Learning 101 - The Complete Reference    
-1. [Introduction](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/READMME-md)
+1. [Introduction](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README-md)
 	1. [About the Course](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#about-the-course)    
-	2. [Targeted Audience](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#targeted-audience)    
-	3.[What is Machine Learning](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#what-is-machine-learning)    
-	4.[Installing Anaconda and Python in your Machine](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#installing-anaconda-and-python-in-your-machine)    
+	2. [Targeted Audience](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#targeted-audience)   
+	3. [What you will Learn](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#what-you-will-learn)    
+	4. [What is Machine Learning](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#what-is-machine-learning)    
+	5. [Installing Anaconda and Python in your Machine](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#installing-anaconda-and-python-in-your-machine)    
 2. [Data Pre-Processing](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/)
 	1. Missing Data
 	2. Categorical Data
