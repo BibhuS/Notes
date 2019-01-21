@@ -4,7 +4,7 @@
 - Additionally it contains course materials that i have created on my own, Kindly request you to use and share this Repository for your Educational purpose.
 
 # Machine Learning 101 - The Complete Reference    
-1. [Introduction](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README-md)
+1. [Introduction](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md)
 	1. [About the Course](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#about-the-course)    
 	2. [Targeted Audience](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#targeted-audience)   
 	3. [What you will Learn](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#what-you-will-learn)    
