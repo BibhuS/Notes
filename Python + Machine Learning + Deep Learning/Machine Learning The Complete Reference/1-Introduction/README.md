@@ -103,3 +103,33 @@
 - A transformation in statistics is called feature creation in machine learning.
 
 # 5.Installing Anaconda and Python in your Machine:
+- It is recommended to have at-least machine with 8GB-RAM.
+- Open the following URL in our browser, [Anaconda Installing User Guide](https://conda.io/docs/user-guide/install/windows.html).
+- Find 2 Different types of Installation modes available in the Doc Page as shown below.
+
+<p align="center">
+  <img width="756" height="305" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/2TypesOfInstallation.JPG?raw=true">
+</p>
+
+- If you are installing Anaconda in your Personal PC/Laptop you can proceed to download Anaconda for Python 3.7 and above, run the .Exe will ask you for Anaconda installation path don't change anything leave things as it and completed the installation.
+- Usually installation will take 20-30 min. Please find the below image for your reference.
+
+<p align="center">
+  <img width="1043" height="466" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Anaconda%20Installer.JPG?raw=true">
+</p>
+
+- If you want to use anaconda in PC/Laptop which does not have Admin access, recommend to use Minicoda a silent version of Anaconda will install everything by default in the machine. (Note: you are the complete responsibility for this action.)
+- please find the below images to Download and install Miniconda in your machine.
+
+<p align="center">
+  <img width="1039" height="671" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Miniconda%20Installer.JPG?raw=true">
+</p>
+
+
+<p align="center">
+  <img width="740" height="600" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Installing%20Miniconda%20-%201.JPG?raw=true">
+</p>
+
+- Miniconda Installation command `start /wait "" Miniconda4-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3`. Here replace the Miniconda version with your version
+
+
