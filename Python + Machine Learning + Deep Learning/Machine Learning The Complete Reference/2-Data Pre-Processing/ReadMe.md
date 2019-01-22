@@ -8,10 +8,10 @@
 	- This is know as Missing data Handling in data Pre-processing.
 - Another aspect is that data set should be formatted in such a way that more than one Machine Learning and Deep Learning algorithms are executed in one data set, and best out of them is chosen.
 - In this part you will learn techniques available in data Pre-processing and how to get in handy with them. Data Pre-processing has the following stages:
-	1. Handling Missing Data
-	2. Handling Categorical Data
-	3. Splitting Data-set into Dev/Training/Test sets
-	4. Feature Scaling
+	1. [Handling Missing Data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#1-handling-missing-data)
+	2. [Handling Categorical Data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#2-handling-categorical-data)
+	3. [Splitting Data-Set into Dev/Training/Test set](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#3-spliting-your-data-set-into-devtrainingtest-set)
+	4. [Feature Scaling](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#4-feature-scaling)
 
 ### 1. Handling Missing Data
 - As all we know the term Missing data refers to the data actually not available in the expected field or available as Null or empty. if we are not addressing this issue with high priority your machine learning model will give poor prediction result.
@@ -37,13 +37,13 @@
 		- If axis=1, then impute along rows.
 	4. it has some other input parameters like verbose and copy, based on your use case you can choose it. the above 2 are the most frequently used input arguments.
 ```py
-from sklearn.preprocessing import Imputer 						# module import: importing the file Impurter from sklearn.proprocessing package
+from sklearn.preprocessing import Imputer 			# module import: importing the file Impurter from sklearn.proprocessing package
 imputer = Imputer(missing_values = "NaN", strategy = "mean") 	# Creating object of the class
 ```
 - Once we have completed the above 2 steps we can either do fit and transform separately or simply we can call fit_transform method from Imputer to fill the missing values with relevant information.
 ```py
-imputer = imputer.fit(X[:,1:3])  				# Will fit our Independent Variable X.
-X[:, 1:3] = imputer.transform(X[:, 1:3]) 		# Will Transform Missing variable with relevent value.
+imputer = imputer.fit(X[:,1:3])  		# Will fit our Independent Variable X.
+X[:, 1:3] = imputer.transform(X[:, 1:3]) 	# Will Transform Missing variable with relevent value.
 or	
 X[:, 1:3] = imputer.fit_transform(X[:, 1:3]) 	# will do above 2 steps in single step.
 ```
@@ -61,8 +61,8 @@ X[:, 1:3] = imputer.fit_transform(X[:, 1:3]) 	# will do above 2 steps in single 
 - Once the encoding is done we can see our encoded data, to perform the task, run the below command.
 ```py
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder 	# module import: importing the file LabelEncoder, OneHotEncoder from sklearn.proprocessing 
-label_Encoder = LabelEncoder() 									# Creating Object of the class to perform our task
-X[:,0] = labelencoder_X.fit_transform(X[:,0]) 					# 0 represents the Encoding column index.
+label_Encoder = LabelEncoder() 				# Creating Object of the class to perform our task
+X[:,0] = labelencoder_X.fit_transform(X[:,0]) 	# 0 represents the Encoding column index.
 ```
 - The above code will select all the rows (because **:**) of the first column (because **0**) and fit the LabelEncoder to it and transform the values.
 - Here we will create a new problem if there are more than two categories.
@@ -77,7 +77,7 @@ X[:,0] = labelencoder_X.fit_transform(X[:,0]) 					# 0 represents the Encoding c
 - then simply calling fit_transform method will do the remain for us.
 ```py
 onehotencoder = OneHotEncoder(categorical_features =[0]) 	# Applying OneHotEncoding to index 0
-X = onehotencoder.fit_transform(X).toarray() 				# loading the converted values to variable X.
+X = onehotencoder.fit_transform(X).toarray() 			# loading the converted values to variable X.
 ```
 - If you check your data-set now, all your categories will have been encoded to **0's** and **1's**.
 	
@@ -88,7 +88,7 @@ X = onehotencoder.fit_transform(X).toarray() 				# loading the converted values 
 - A general rule of the thumb is to allocate **80% of the data-set to training set and the remaining 20% to test set**.
 - **test_train_split** is a class of sklearn.model_selection library, which is going to do the task.
 ```py
-from sklearn.model_selection import train_test_split 					# module import: importing the file train_test_split from sklearn.proprocessing 
+from sklearn.model_selection import train_test_split 			# module import: importing the file train_test_split from sklearn.proprocessing 
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2) # Creating 4 variable for training set and test set.
 ```
 - The above code will split out data-set into training and test set based on 80/20 ratio. and will assign the data into 4 new variables called X_train, X_test, Y_train, Y_test.
@@ -114,18 +114,30 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2) # Creati
 				- Subtract the mean from each feature.
 				- Divide the values (mean is already subtracted) of each feature by its standard deviation.
 				- <b>x</b> is the original feature vector, <b>x&#772; = average(x)</b> is the mean of that feature vector and  <b>&sigma;</b> is its standard deviation.
+				<p align="center">
+  					<img width="161" height="82" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Reference/Standardisation.JPG?raw=true">
+				</p>
 		2. **Mean Normalisation**:
 			- This distribution will have values between **-1 and 1** with **μ=0**.
 			- <b>x</b> is the original value, <b>x'</b> is the normalized value.
 			- **Standardisation** and **Mean Normalization** can be used for algorithms that assumes zero centric data like **Principal Component Analysis(PCA)**.
+			<p align="center">
+  				<img width="272" height="105" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Reference/Mean%20Normalization.JPG?raw=true">
+			</p>
 		3. **Min-Max Scaling(Rescaling)**:
 			-  is the simplest method and consists in rescaling the range of features to scale the range in **[0, 1] or [−1, 1]**.
 			- Selecting the target range depends on the nature of the data.
+			<p align="center">
+  				<img width="284" height="95" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Reference/Min-Max%20Scaling.JPG?raw=true">
+			</p>
 		4. **Unit Vector**:
 			- Scaling is done considering the whole feature vecture to be of unit length.
 			- **Min-Max** Scaling and **Unit Vector** techniques produces values of **range [0,1]**. 
 			- When dealing with features with hard boundaries this is quite useful.
 			- For example, when dealing with image data, the colors can range from only 0 to 255.
+			<p align="center">
+  				<img width="178" height="94" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Reference/Unit%20Vector.JPG?raw=true">
+			</p>
 - Some examples of algorithms where feature scaling matters are:
 	- **k-nearest neighbors** with an Euclidean distance measure is sensitive to magnitudes and hence should be scaled for all features to weigh in equally.
 	- **Principal Component Analysis (PCA)** tries to get the features with maximum variance and the variance is high for high magnitude features. This skews the PCA towards high magnitude features.

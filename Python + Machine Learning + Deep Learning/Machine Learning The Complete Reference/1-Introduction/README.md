@@ -106,7 +106,7 @@
 	- Streamlining oil distribution to make it more efficient and cost-effective. 
 	- The number of machine learning use cases for this industry is vast – and still expanding.
     
-##### 4.3 Did you know ?
+#### 4.5 Did you know ?
 - In machine learning, a target is called a label. where in statistics, a target is called a dependent variable.
 - A variable in statistics is called a feature in machine learning.
 - A transformation in statistics is called feature creation in machine learning.
