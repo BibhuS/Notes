@@ -18,7 +18,7 @@
 - So we need to be equipped to handle the problem when we come across them.
 - We can see multiple suggestions and ways in imternet to address this porblem, but one of the thumb rule in machine learning is Every record is importannt and we dont know some information belons to that row may be an important key factor for our prediction.
 - So we are going to take one of the most common idea to handle the problem is to take a mean/Median/Most_Occured of all the values from the column and replace it with missing data.
-- Imputer is a class from Scikit Learn library.Preperocessing which is going to do the task for us, exactly it is going to do above step.
+- Imputer is a class from Scikit Learn library.Preperocessing which is going to do the task, exactly it is going to do above step.
 - it has the following input parameters:
 	- missing_values:
 		- it has valeus like integer, string, np.nan(default) or None. 
@@ -57,7 +57,7 @@
 - Now it gets complicated for machines to understand texts and process them, rather than numbers, since the models are based on mathematical equations and calculations.
 - We cannot convert all the data from text form to numeric, expect some like categorical data. therefore we have to encode the categorical data,
 - examples of categorical data we may expect in our data-set are Country, Department, Gender and any key which will place Group by Aggregation operation in your problem.
-- LableEncoder ans OneHotEncoder are a classes form Scikit Learn library.Preperocessing which is going to do the task for us, exactly it is going to do above step.
+- LableEncoder ans OneHotEncoder are a classes form Scikit Learn library.Preperocessing which is going to do the task, exactly it is going to do above step.
 - Lable Encoder:
 	- it is mainly used to convert Categorical variables into a sequence of numbers like 0, 1, 2, 3, 4, 5 and etc.. based on the upper limit.
 	- It is important to remember that the index starts from 0 and ends with upper limit.
@@ -88,5 +88,32 @@
 ### 3. Spliting your data-set into Dev/Training/Test set
 - It is recommended to split your data-set to Dev/Training/Test sets to complete our ddevelopment, training and Tests.
 - Usually in internet you can find only Training/Test set separation only, you can follow any method. for your understanding we are going to use only Training/Test sepparation only.
+- We will train our machine learning models on our training set, i.e our machine learning models will try to understand any correlations in our training set and then we will test the models on our test set to check how accurately it can predict.
+- A general rule of the thumb is to allocate 80% of the dataset to training set and the remaining 20% to test set.
+- test_train_split is a calss of sklearn.model_selection library, which is going to do the task.
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2)
+
+- The above code will split out dataset into training and test set based on 80/20 ratio. and will assing the data into 4 new variables called X_train, X_test, Y_train, Y_test.
+- For our understanding we are using the name as X_train, X_test, Y_train, Y_test. you can keep any name based on your understanding.
 
 ### 4. Feature Scaling
+- The final step of data preprocessing is to apply the very important feature scaling.
+- Feature scaling is a method used to standardize the range of independent variables or features of data. 
+- Why it is important:
+	- A lot of machine learning models are based on Euclidean distance.
+	- for example, the values in one column (x) is much higher than the value in another column (y), (x2-x1) squared will give a far greater value than (y2-y1) squared.
+	- it chows clearly that one square difference dominates over the other square difference.
+	- In the machine learning equations, the square difference with the lower value in comparison to the far greater value will almost be treated as if it does not exist.
+	- That is why it is necessary to transform all our variables into the same scale.
+- There are several ways of scaling the data. we are going to follow one of the mostly used way called Standardization.
+- For every observation of the selected column, our program will apply the below formula of standardization and fit it to a scale.
+- StandardScaler is a class of sklearn.preprocessing library, which is going to do the task.
+	
+	from sklearn.preprocessing import StandardScaler
+	sc_X = StandardScaler()
+	X_train = sc_X.fit_transform(X_train)
+	X_test = sc_X.transform(X_test)
+
+- Note: the above step is required when you have too large values Predictor/Independent variable.
