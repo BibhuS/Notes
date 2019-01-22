@@ -61,8 +61,8 @@ X[:, 1:3] = imputer.fit_transform(X[:, 1:3]) 	# will do above 2 steps in single 
 - Once the encoding is done we can see our encoded data, to perform the task, run the below command.
 ```py
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder 	# module import: importing the file LabelEncoder, OneHotEncoder from sklearn.proprocessing 
-label_Encoder = LabelEncoder() 				# Creating Object of the class to perform our task
-X[:,0] = labelencoder_X.fit_transform(X[:,0]) 	# 0 represents the Encoding column index.
+label_Encoder = LabelEncoder() 					# Creating Object of the class to perform our task
+X[:,0] = labelencoder_X.fit_transform(X[:,0]) 			# 0 represents the Encoding column index.
 ```
 - The above code will select all the rows (because **:**) of the first column (because **0**) and fit the LabelEncoder to it and transform the values.
 - Here we will create a new problem if there are more than two categories.
