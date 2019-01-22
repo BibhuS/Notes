@@ -143,7 +143,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2) # Creati
 	- **Principal Component Analysis (PCA)** tries to get the features with maximum variance and the variance is high for high magnitude features. This skews the PCA towards high magnitude features.
 	- We can speed up gradient descent by scaling. This is because θ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven.
 	- Algorithms like Linear Discriminant Analysis(LDA), Naive Bayes are by design equipped to handle this and gives weights to the features accordingly. 
-- For every observation of the selected column, our program will apply the below formula of standardization and fit it to a scale.
+- We are going to take Standardisation for our feature scaling task.
 - **StandardScaler** is a class of sklearn.preprocessing library, which is going to do the task.
 ```py
 from sklearn.preprocessing import StandardScaler 	# module import: importing the file StandardScaler from sklearn.proprocessing  								# Creating Object of the class to perform our task
