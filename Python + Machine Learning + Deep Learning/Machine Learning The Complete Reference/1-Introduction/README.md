@@ -1,10 +1,14 @@
 # 1.About the Course:
-- Hi all, a warm Welcome to all of you. If you are one of the person who is seeking to explore more like others in Machine Learning area but don't know where/how to start ? Hooray, you are in the right place at right time.
-- The course has been designed by a Professional Machine Learning Engineer, who is seeking more opportunists by sharing his knowledge by helping you to solve Complex Algorithms using simple/complex use-cases in simple way.
+- Hi, a warm Welcome to you. If you are one of the person who is trying to explore more detail in Machine Learning like others, but don't know where/how to start ? Hooray, you are in the right place at right time.
+- The course has been designed by a Professional Machine Learning Engineer, who is trying to create more opportunists in Machine Learning by sharing his knowledge and helping you to solve complex Algorithms in simple way.
 - I am going to take you step by step to the world of Machine Learning, With every tutorial in this course you will develop new skills and improve your understanding in Machine Learning.
-- Moreover, the course is packed with practical exercises which are based on real-life examples. So not only will you learn the theory, but you will also get some hands-on practice building your own models and use-cases.
+- Moreover, the course is packed with practical exercises which are based on real-life examples. So you will learn the theory and also get some hands-on practice by building your own models and use-cases.
 - The course is structured the following way:
-	1. [Data Pre-processing]((https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/))
+	1. [Data Pre-Processing](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#data-preprocessing)
+		1. [Handling Missing Data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#1-handling-missing-data)
+		2. [Handling Categorical Data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#2-handling-categorical-data)
+		3. [Splitting Data-Set into Dev/Training/Test set](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#3-spliting-your-data-set-into-devtrainingtest-set)
+		4. [Feature Scaling](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#4-feature-scaling)
  	2. Regression Models
 	 	1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression)
 	 	2. Multiple Linear Regression
@@ -43,49 +47,54 @@
 	 	4. XGBoost
   
 # 2.Targeted Audience:
+- Anyone interested in Machine Learning.
+- Any data analysts who want to level up in Machine Learning.
 - Students who have at least high school knowledge in math and who want to start learning Machine Learning.
 - Any intermediate level people who know the basics of machine learning, including the classical algorithms like linear regression or logistic regression, but who want to learn more about it and explore all the different fields of Machine Learning.
-- Anyone interested in Machine Learning.
 - Any people who are not that comfortable with coding but who are interested in Machine Learning and want to apply it easily on datasets.
-- Any data analysts who want to level up in Machine Learning.
-- Any people who are not satisfied with their job and who want to become a Data Scientist.
+- Any people who are not satisfied with their job and who want to do something new in Machine Learning.
 
 # 3.What you will Learn:
 - Master Machine Learning on Python.
 - Have a great intuition of many Machine Learning models.
-- Make accurate predictions by powerfull analysis methods.
+- Make accurate predictions by powerful analysis methods.
 - Make robust Machine Learning models.
 - Handle specific topics like Reinforcement Learning, NLP and Deep Learning and Handle advanced techniques like Dimensionality Reduction
 # 4.What is Machine Learning:
-- **Machine learning** is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention. While artificial intelligence (AI) is the broad science of mimicking human abilities, machine learning is a specific subset of AI that trains a machine how to learn.
-- The processes involved in machine learning are similar to that of data mining and predictive modeling. Both require searching through data to look for patterns and adjusting program actions accordingly.
-- Many people are familiar with machine learning from shopping on the internet and being served ads related to their purchase. This happens because recommendation engines use machine learning to personalize online ad delivery in almost real time.
+- **Machine learning** is a method of data analysis that automates analytical model building. 
+- It is a branch of artificial intelligence based on the idea that systems can learn from data, find patterns and make decisions with minimal human intervention. 
+- While artificial intelligence (AI) is the broad science of mimicking human abilities, machine learning is a specific subset of AI that trains a machine how to learn.
+- The processes involved in machine learning are similar to data mining and predictive modeling. Both require searching through data to look for patterns and adjusting program actions accordingly.
+- Many people are familiar with machine learning from shopping on the internet and being served ads related to their purchase. This happens because recommendation engines use machine learning to personalize online ad delivery in almost real-time.
 - Machine learning algorithms are often categorized as **supervised** or **unsupervised** Learning.
-- **Supervised Learning**:
-	- Supervised algorithms require a data scientist or data analyst with machine learning skills to provide both input and desired output, in addition to furnishing feedback about the accuracy of predictions during algorithm training.
-    - Data scientists determine which variables, or features, the model should analyze and use to develop predictions.
-    - Once training is complete, the algorithm will apply what was learned to new data.
-- **Unsupervised Learning**:
-    - Unsupervised algorithms do not need to be trained with desired outcome data. Instead, they use an iterative approach called deep learning to review data and arrive at conclusions. 
-    - Unsupervised learning algorithms -- also called neural networks -- are used for more complex processing tasks than supervised learning systems, including image recognition, speech-to-text and natural language generation.
-    - These neural networks work by combing through millions of examples of training data and automatically identifying often subtle correlations between many variables. Once trained, the algorithm can use its bank of associations to interpret new data.
-    - These algorithms have only become feasible in the age of big data, as they require massive amounts of training data.
-##### 4.1 What is required to create a good machine learning systems:
+
+#### 4.1 Supervised Learning:
+- Supervised algorithms require a data scientist or data analyst with machine learning skills to provide both input and desired output, in addition to furnishing feedback about the accuracy of predictions during algorithm training.
+- Data scientists determine which variables, or features, the model should analyze and use to develop predictions.
+- Once training is complete, the algorithm will apply what was learned to new data.
+
+#### 4.2 Unsupervised Learning:
+- Unsupervised algorithms do not need to be trained with desired outcome data. Instead, they use an iterative approach called deep learning to review data and arrive at conclusions. 
+- Unsupervised learning algorithms also uses an area called neural networks, they used for more complex processing tasks than supervised learning systems, including image recognition, speech-to-text and natural language generation.
+- These neural networks work by combing through millions of examples of training data and automatically identifying often subtle correlations between many variables. Once trained, the algorithm can use its bank of associations to interpret new data.
+- These algorithms have only become feasible in the age of big data, as they require massive amounts of training data.
+
+#### 4.3 What is required to create a good machine learning systems:
 - Data preparation capabilities.
 - Algorithms – basic and advanced.
 - Automation and iterative processes.
 - Scalability.
 - Ensemble modeling.
   
-##### 4.2 Who's using it ?
-- Most industries working with large amounts of data have recognized the value of machine learning technology. By gleaning insights from this data – often in real time – organizations are able to work more efficiently or gain an advantage over competitors.
+#### 4.4 Who's using it ?
+- Most industries working with large amounts of data have recognized the value of machine learning technology. Below listed are some of area's Machine Learning models are being used widely.
 - **Financial services**:
 	- Banks and other businesses in the financial industry use machine learning technology for two key purposes:
 	- to identify important insights in data, and prevent fraud.
 	- The insights can identify investment opportunities, or help investors know when to trade.
 	- Data mining can also identify clients with high-risk profiles, or use Cyber-Surveillance to pinpoint warning signs of fraud.
 - **Health care**:
-	- Machine learning is a fast-growing trend in the health care industry, thanks to the advent of wearable devices and sensors that can use data to assess a patient's health in real time. 
+	- Machine learning is a fast-growing trend in the health care industry, thanks to the advent of wearable devices and sensors that can use data to assess a patient's health in real-time. 
 	- The technology can also help medical experts analyze data to identify trends or red flags that may lead to improved diagnoses and treatment. 
 - **Retail**:
 	- Websites recommending items you might like based on previous purchases are using machine learning to analyze your buying history. 
@@ -103,7 +112,7 @@
 - A transformation in statistics is called feature creation in machine learning.
 
 # 5.Installing Anaconda and Python in your Machine:
-- It is recommended to have at-least machine with 8GB-RAM.
+- It is recommended to have at-least machine with 8GB-RAM. i prefer to go with Anaconda since it gives you all the libraries more handy
 - Open the following URL in our browser, [Anaconda Installing User Guide](https://conda.io/docs/user-guide/install/windows.html).
 - Find 2 Different types of Installation modes available in the Doc Page as shown below.
 
@@ -131,5 +140,3 @@
 </p>
 
 - Miniconda Installation command `start /wait "" Miniconda4-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3`. Here replace the Miniconda version with your version
-
-
