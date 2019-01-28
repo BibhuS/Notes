@@ -66,27 +66,46 @@
 - While artificial intelligence (AI) is the broad science of mimicking human abilities, machine learning is a specific subset of AI that trains a machine how to learn.
 - The processes involved in machine learning are similar to data mining and predictive modeling. Both require searching through data to look for patterns and adjusting program actions accordingly.
 - Many people are familiar with machine learning from shopping on the internet and being served ads related to their purchase. This happens because recommendation engines use machine learning to personalize online ad delivery in almost real-time.
-- Machine learning algorithms are often categorized as **supervised** or **unsupervised** Learning.
+- Machine learning algorithms are often categorized as **Supervised** or **Unsupervised** or **Semi-Supervised** Learning.
 
 #### 4.1 Supervised Learning:
 - Supervised algorithms require a data scientist or data analyst with machine learning skills to provide both input and desired output, in addition to furnishing feedback about the accuracy of predictions during algorithm training.
 - Data scientists determine which variables, or features, the model should analyze and use to develop predictions.
 - Once training is complete, the algorithm will apply what was learned to new data.
+- In simple terms Supervised Learning is know as "Supervised learning is so named because the data scientist acts as a guide to teach the algorithm what conclusions it should come up with". and it is the more commonly used between the three.
+- It includes such algorithms as linear and logistic regression, multi-class classification, and support vector machines and etc... **For Example:** A child might learn arithmetic from a teacher
+- Supervised learning requires that the algorithm’s possible outputs are already known and that the data used to train the algorithm is already labeled with correct answers.
+- **For Example:** Classification algorithm will learn to identify animals after being trained on a dataset of images that are properly labeled with the species of the animal and some identifying characteristics
 
 #### 4.2 Unsupervised Learning:
 - Unsupervised algorithms do not need to be trained with desired outcome data. Instead, they use an iterative approach called deep learning to review data and arrive at conclusions. 
 - Unsupervised learning algorithms also uses an area called neural networks, they used for more complex processing tasks than supervised learning systems, including image recognition, speech-to-text and natural language generation.
 - These neural networks work by combing through millions of examples of training data and automatically identifying often subtle correlations between many variables. Once trained, the algorithm can use its bank of associations to interpret new data.
 - These algorithms have only become feasible in the age of big data, as they require massive amounts of training data.
+- Some examples of unsupervised machine learning algorithms include k-means clustering, principal and independent component analysis, and association rules.
 
-#### 4.3 What is required to create a good machine learning systems:
+#### 4.3 Which algorithm to choose for my problem:
+- Choosing to use either a supervised or unsupervised machine learning algorithm typically depends on factors related to the structure and volume of your data and the use case of the issue at hand.
+- A well-rounded data science program will use both types of algorithms to build predictive data models that help stakeholders make decisions across a variety of business challenges.
+
+#### 4.4 Semi-Supervised Learning:
+- Semi-supervised learning is a class of machine learning tasks and techniques that also make use of unlabeled data for training – typically a small amount of labeled data with a large amount of unlabeled data.
+- Semi-supervised learning falls between unsupervised learning (without any labeled training data) and supervised learning (with completely labeled training data).
+- Many machine-learning researchers have found that unlabeled data, when used in conjunction with a small amount of labeled data, can produce considerable improvement in learning accuracy over unsupervised learning but without the time and costs needed for supervised learning.
+- As you may have guessed, semi-supervised learning algorithms are trained on a combination of labeled and unlabeled data. This is useful for the following  reasons.
+	1. the process of labeling massive amounts of data for supervised learning is often prohibitively time-consuming and expensive.
+	2. What’s more, too much labeling can impose human biases on the model.
+	3. That means including lots of unlabeled data during the training process actually tends to improve the accuracy of the final model while reducing the time and cost spent building it.
+- For the above Reasons, semi-supervised learning is a win-win for use cases like webpage classification, speech recognition, or even for genetic sequencing.
+
+#### 4.5 What is required to create a good machine learning systems:
 - Data preparation capabilities.
 - Algorithms – basic and advanced.
 - Automation and iterative processes.
 - Scalability.
 - Ensemble modeling.
   
-#### 4.4 Who's using it ?
+#### 4.6 Who's using it ?
 - Most industries working with large amounts of data have recognized the value of machine learning technology. Below listed are some of area's Machine Learning models are being used widely.
 - **Financial services**:
 	- Banks and other businesses in the financial industry use machine learning technology for two key purposes:
@@ -106,7 +125,7 @@
 	- Streamlining oil distribution to make it more efficient and cost-effective. 
 	- The number of machine learning use cases for this industry is vast – and still expanding.
     
-#### 4.5 Did you know ?
+#### 4.7 Did you know ?
 - In machine learning, a target is called a label. where in statistics, a target is called a dependent variable.
 - A variable in statistics is called a feature in machine learning.
 - A transformation in statistics is called feature creation in machine learning.
