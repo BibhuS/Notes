@@ -170,10 +170,6 @@
 </p>
 
 - By clicking on above Anaconda Navigator icon will open he following Dashboard screen. 
-<p align="center">
-  <img width="1363" height="599" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Anaconda%20Dashboard.JPG?raw=true">
-</p>
-
 - please find Spyder IDE and click launch button to launch spyder IDE or simply you can search for sypder in Windows search and launch Spyder IDE.
 <p align="center">
   <img width="1363" height="599" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Anaconda%20Dashboard.JPG?raw=true">
