@@ -17,7 +17,7 @@
 
 ## 3. Types of Regression Models:
 - There are several types of Regression models used in Machine Learning which falls under supervised learning
-	- Simple Linear Regression
+	- [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Simple%20Linear%20Regression#simple-linear-regression)
 	- Multiple Linear Regression
 	- Polynomial Regression
 	- Super Vector Regression
