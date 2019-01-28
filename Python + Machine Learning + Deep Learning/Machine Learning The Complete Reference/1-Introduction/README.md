@@ -159,3 +159,8 @@
 </p>
 
 - Miniconda Installation command `start /wait "" Miniconda4-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3`. Here replace the Miniconda version with your version
+
+# 6.How to start with Spyder IDE:
+- If you want to get in hand with, Machine Learning and Data Science practices one of the best tool that i can suggest is Spyder IDE, which comes along with Anaconda installation.
+- As a pre-requisite before proceeding this topic, i suggest yout to look in to the following link to install anaconda in your machine. [link to install Anaconda](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#5installing-anaconda-and-python-in-your-machine).
+- Once you completed installing anaconda in your machine, navigate to start and type Anaconda you will find the following Icon 
