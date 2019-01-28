@@ -152,10 +152,12 @@
 - Still worried how it is a machine learning ? here is your answer, in the above program you have created a model(machine) that learned from its input IV and predicted result.
 
 ### 6 - Additional Use-cases:
-1) Create a Machine Learning Model in Python to summarize trend between [Employee Yrs of Experience (vs) Salary]. [[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/Salary_Data.csv)   
-2) Create a Machine Learning Model in Python to summarize trend between [Latitude (vs) Skin Cancer Morality].
+1) Create a Machine Learning model in python to summarize trend between [Employee Yrs of Experience (vs) Salary]. [[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/Salary_Data.csv)   
+2) Create a Machine Learning model in python to summarize trend between [Latitude (vs) Skin Cancer Morality].
 [[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/SkinCancer.csv)    
-3) Create a Machine Learning Model in Python to summarize trend between [Height (vs) Weight].[[Dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/Book1.csv)
+3) Create a Machine Learning model in python to summarize trend between [Height (vs) Weight].[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/Book1.csv)   
+4) Create a Machine Learning model in python to summarize trend between [Age (vs) Blood Fat].[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/BloodFatCalculator.csv)   
+5) Create a Machine Learning model in python to summarize trend between [Kilowatts (vs) Bill Units].[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression/Dataset/ElectricityCalculator.csv)
 
 ##### Reference URL:    
   [To Understand Concepts Behind SLR - Site](https://newonlinecourses.science.psu.edu/stat501/node/250/)    
