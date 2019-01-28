@@ -163,4 +163,42 @@
 # 6.How to start with Spyder IDE:
 - If you want to get in hand with, Machine Learning and Data Science practices one of the best tool that i can suggest is Spyder IDE, which comes along with Anaconda installation.
 - As a pre-requisite before proceeding this topic, i suggest yout to look in to the following link to install anaconda in your machine. [link to install Anaconda](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/README.md#5installing-anaconda-and-python-in-your-machine).
-- Once you completed installing anaconda in your machine, navigate to start and type Anaconda you will find the following Icon 
+- Once you completed installing anaconda in your machine, navigate to start and type Anaconda you will find the following Icon in start menu
+
+<p align="center">
+  <img width="211" height="372" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Windows%20Search.JPG?raw=true">
+</p>
+
+- By clicking on above Anaconda Navigator icon will open he following Dashboard screen. 
+<p align="center">
+  <img width="1363" height="599" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Anaconda%20Dashboard.JPG?raw=true">
+</p>
+
+- please find Spyder IDE and click launch button to launch spyder IDE or simply you can search for sypder in Windows search and launch Spyder IDE.
+<p align="center">
+  <img width="1363" height="599" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Anaconda%20Dashboard.JPG?raw=true">
+</p>
+
+- Once you open the IDE, it is always recommeded to move to your project directory. to navigate to the project folder use the File Explorer as follows, and create your py file by clicking New file creator icon and set it as your currnet working directory, if you want to shitch Drive use URL navigator in top right corner of the IDE.
+
+<p align="center">
+  <img width="1025" height="393" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/1-Introduction/References/Spyder%20IDE%20Overview.JPG?raw=true">
+</p>
+
+- Image description below:
+	1. Open New Py file
+	2. Set Current working Directory
+	3. File Explorer
+	4. URL Navigator
+	5. Ipython Console Output
+	6. Writing area
+	7. Save changes
+	
+- It is recommended to follow the below steps when you get in handy with Spyder IDE.
+
+	1. Open Spyder IDE
+	2. Use file explorer or URL navigator and navigate to your project directory.
+	3. open new File
+	4. right click and "Set Current working Directory"
+	5. type your program in writing area and check your output in IPython console
+	6. save your program
