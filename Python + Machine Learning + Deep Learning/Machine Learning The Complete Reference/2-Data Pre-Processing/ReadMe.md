@@ -19,23 +19,24 @@
 - We can see multiple suggestions and ways in internet to address this problem, but one of the thumb rule in machine learning is Every record is important and we don't know some information belongs to that row may be an important key factor for our prediction.
 - So we are going to take one of the most common idea to handle the problem is to take a mean/Median/Most_Occured of all the values from the column and replace it with missing data.
 - **Imputer** is a class from Sci-kit Learn library.Pre-perocessing which is going to do the task, exactly it is going to do above step.
-- it has the following input parameters
-	1. missing_values:
-		- it has valeus like integer, string, np.nan(default) or None. 
-		- Based on your usecase you can go with either of'em. at the initial phase of data pre-processing it is recommended to go with NaN.
-	2. strategy:
-		- it is an optional field
+- It has the following input parameters
+	1. **missing_values:**
+		- It accepts valeus like integer, string, np.nan(default) or None. 
+		- Based on your usecase you can go with either of'em. at the initial phase of data pre-processing it is recommended to go with NaN or np.nan.
+	2. **strategy:**
+		- It is an optional field
 		- By default will take mean of the column
 		- If Mean --> then replace missing values using the mean along each column and it Can only be used with numeric data.
 		- If Median --> then replace missing values using the median along each column. Can only be used with numeric data.
 		- If most_frequent --> then replace missing using the most frequent value along each column. Can be used with strings or numeric data.
 		- If constant --> then replace missing values with fill_value. Can be used with strings or numeric data.
-	3. Axis:
+	3. **Axis:**
 		- The axis along which to impute.
-		- by default it is 0
+		- By default it is 0
 		- If axis=0, then impute along columns.
 		- If axis=1, then impute along rows.
-	4. it has some other input parameters like verbose and copy, based on your use case you can choose it. the above 2 are the most frequently used input arguments.
+	4. It has some other input parameters like verbose and copy, based on your use case you can choose it. the above 2 are the most frequently used input arguments. If you want to know more about Imputer Please visit the following Link [sklearn.preprocessing.Imputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html).    
+	**Note:** Please check for the current version of Imputer before reading it.
 ```py
 from sklearn.preprocessing import Imputer 			# module import: importing the file Impurter from sklearn.proprocessing package
 imputer = Imputer(missing_values = "NaN", strategy = "mean") 	# Creating object of the class
@@ -47,7 +48,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3]) 	# Will Transform Missing variable with
 or	
 X[:, 1:3] = imputer.fit_transform(X[:, 1:3]) 	# will do above 2 steps in single step.
 ```
-- The code above will fit_transform the Imputer object to our matrix of features X. Since we used **:**, it will select all rows and **1:3** will select the second and the third column.
+- The code above will fit_transform the Imputer object to our matrix of features X. Since we used **(:)**, it will select all rows and **(1:3)** will select the second and the third column.
 	
 ### 2. Handling Categorical Data
 - Sometimes our data is in qualitative form, that is we have texts as our data.
@@ -55,7 +56,7 @@ X[:, 1:3] = imputer.fit_transform(X[:, 1:3]) 	# will do above 2 steps in single 
 - We cannot convert all the data from text form to numeric, expect some like categorical data. therefore we have to encode the categorical data, examples of categorical data we may expect in our data-set are Country, Department, Gender and any key which will place Group by Aggregation operation in your problem.
 - **LabelEncoder** and **OneHotEncoder** are a classes form Sci-kit Learn library, which is going to do the task, exactly it is going to do what we have mentioned in above step.
 
-#### 2.1 LabelEncoder:
+#### 2.1 [LabelEncoder:](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)
 - It is mainly used to convert Categorical variables into a sequence of numbers like 0, 1, 2, 3, 4, 5 and etc.. based on the upper limit.
 - It is important to remember that the index starts from 0 and ends with upper limit.
 - Once the encoding is done we can see our encoded data, to perform the task, run the below command.
@@ -68,7 +69,7 @@ X[:,0] = labelencoder_X.fit_transform(X[:,0]) 			# 0 represents the Encoding col
 - Here we will create a new problem if there are more than two categories.
 - As we keep assigning different integers to different categories, it may create a confusion for the algorithm to learn the Relationship(trend) between variables, to solve this problem we are going to use OneHotEncoder.
 
-#### 2.2 OneHotEncoder:
+#### 2.2 [OneHotEncoder:](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
 - It is recommended to have this in pipeline after LabelEncoder completed.
 - The transformation behind OneHotEncoder is very simple it follows the operation of Binary Transformation, hope you might remembered the relationship between integer to Binary format.
 - Here we are going to convert the values encoded using LabelEncoder to Binary form.
@@ -144,7 +145,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2) # Creati
 	- We can speed up gradient descent by scaling. This is because θ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven.
 	- Algorithms like Linear Discriminant Analysis(LDA), Naive Bayes are by design equipped to handle this and gives weights to the features accordingly. 
 - We are going to take Standardisation for our feature scaling task.
-- **StandardScaler** is a class of sklearn.preprocessing library, which is going to do the task.
+- **[StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)** is a class of sklearn.preprocessing library, which is going to do the task.
 ```py
 from sklearn.preprocessing import StandardScaler 	# module import: importing the file StandardScaler from sklearn.proprocessing  								# Creating Object of the class to perform our task
 sc_X = StandardScaler()
@@ -152,5 +153,6 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 ```
 
+[Step-by-Step guide to Pre-processing your data in Python](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Step-by-Step%20guide%20to%20Pre-processing%20your%20data%20in%20Python)   
 **Note**: The above step is required when you have too large values Predictor/Independent variable.   
 **FAQ**: Feel free to Drop your queries in Issues, will be addressed ASAP
