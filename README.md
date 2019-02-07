@@ -18,9 +18,38 @@
 	4. [Feature Scaling](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#4-feature-scaling)    
 3. [Regression Models](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models#regression-models)
 	1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Simple%20Linear%20Regression#simple-linear-regression)
-	2. Multiple Linear Regression
+	2. [Multiple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#multi-linear-regression)
 	3. Polynomial Regression
 	4. Super Vector Regression
 	5. Decision Tree Regression
 	6. Random Forest Regression
 	7. Evaluating Model Performance
+4. Classification 
+	 1. Logistic Regression
+	 2. K-NN
+	 3. SVM
+	 4. Kernel SVM
+	 5. Naive Bayes
+	 6. Decision Tree Classification
+	 7. Random Forest Classification
+5. Clustering
+	 1. K-Means
+	 2. Hierarchical Clustering
+6. Association Rule Learning 
+	 1. Apriori Rule
+	 2. Eclat Rule
+7. Reinforcement Learning
+ 	1. UCB - Upper Confidence Bound
+ 	2. Thompson Sampling
+8. Deep Learning
+ 	1. Artificial Neural Networks
+ 	2. Convolutional Neural Networks
+9. Dimensionality Reduction 
+ 	1. PCA
+ 	2. LDA
+ 	3. Kernel PCA
+10. Model Selection & Boosting
+ 	1. k-fold Cross Validation
+ 	2. Parameter Tuning
+ 	3. Grid Search
+ 	4. XGBoost

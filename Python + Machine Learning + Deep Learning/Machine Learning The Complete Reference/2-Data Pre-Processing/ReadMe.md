@@ -80,7 +80,8 @@ X[:,0] = labelencoder_X.fit_transform(X[:,0]) 			# 0 represents the Encoding col
 onehotencoder = OneHotEncoder(categorical_features =[0]) 	# Applying OneHotEncoding to index 0
 X = onehotencoder.fit_transform(X).toarray() 			# loading the converted values to variable X.
 ```
-- If you check your data-set now, all your categories will have been encoded to **0's** and **1's**.
+- If you check your data-set now, all your categories will have been encoded to **0's** and **1's**.   
+- This process is also know as creating Dummy Variables. But still we have a problem here due to the newly added columns, yes it will create a problem called "Dummy variable trap". It is important to avoid dummy variable trap on our data-set, to avoid this it is recommended to remove last column which is generated. we will see more about Dummy variable trap in Multi Linear Regression.
 	
 ### 3. Spiting your data-set into Dev/Training/Test set
 - It is recommended to split your data-set to Dev/Training/Test sets to complete our development, training and Tests.
@@ -100,8 +101,8 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.2) # Creati
 - Feature scaling is a method used to standardize the range of independent variables or features of data. 
 - Why it is important:
 	- A lot of machine learning models are based on Euclidean distance.
-	- for example, the values in one column (x) is much higher than the value in another column (y), (x2-x1) squared will give a far greater value than (y2-y1) squared.
-	- it shows clearly that one square difference dominates over the other square difference.
+	- For example, the values in one column (x) is much higher than the value in another column (y), (x2-x1) squared will give a far greater value than (y2-y1) squared.
+	- It shows clearly that one square difference dominates over the other square difference.
 	- In the machine learning equations, the square difference with the lower value in comparison to the far greater value will almost be treated as if it does not exist.
 	- That is why it is necessary to transform all our variables into the same scale.
 - How to Scale Features:
@@ -151,8 +152,6 @@ from sklearn.preprocessing import StandardScaler 	# module import: importing the
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
-```
-
-[Step-by-Step guide to Pre-processing your data in Python](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing/Step-by-Step%20guide%20to%20Pre-processing%20your%20data%20in%20Python)   
+``` 
 **Note**: The above step is required when you have too large values Predictor/Independent variable.   
 **FAQ**: Feel free to Drop your queries in Issues, will be addressed ASAP

@@ -9,13 +9,14 @@
 		2. [Handling Categorical Data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#2-handling-categorical-data)
 		3. [Splitting Data-Set into Dev/Training/Test set](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#3-spliting-your-data-set-into-devtrainingtest-set)
 		4. [Feature Scaling](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#4-feature-scaling)
- 	2. Regression Models
+ 	2. [Regression Models](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models#regression-models)
 	 	1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-%20Simple%20Linear%20Regression)
-	 	2. Multiple Linear Regression
+	 	2. [Multiple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#multi-linear-regression)
 	 	3. Polynomial Regression
 	 	4. SVR
 	 	5. Decision Tree Regression
 	 	6. Random Forest Regression
+	 	7. Evaluating Model Performance
  	3. Classification 
 	 	1. Logistic Regression
 	 	2. K-NN
