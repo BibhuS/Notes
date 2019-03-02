@@ -23,8 +23,8 @@
 </p>    
 
 - Lets see the concept of MLR using the following example [[Dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression/Datasets/Logistics.csv). In the dataset we have 3 IV's {Miles Traveled(<b>X<sub>1</sub></b>), NoOfDeliveries(<b>X<sub>2</sub></b>) and GasPrice(<b>X<sub>3</sub></b>) and City[Base Location of truck] (<b>X<sub>4</sub></b>)} and one DV {TravelTime(<b>Y</b>)}. Before that i would like to give you a heads up on the below 2 topics
-	- [Dummy Variables](https://github.com/ManikandanJeyabal/Notes/tree/MultiLinear-Regression/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#2-dummy-variables)
-	- [Model selection for MLR](https://github.com/ManikandanJeyabal/Notes/tree/MultiLinear-Regression/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#3-model-selection-for-mlr)
+	- [Dummy Variables](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#2-dummy-variables)
+	- [Model selection for MLR](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Multi%20Linear%20Regression#3-model-selection-for-mlr)
 
 ### 2 Dummy Variables:   
 - Lets assume that one of our independent variable has a [categorical data](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20+%20Machine%20Learning%20+%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/2-Data%20Pre-Processing#2-handling-categorical-data). here there is a chance our model will fall in to a common problem called "Dummy variable trap" when we are encoding our data.
