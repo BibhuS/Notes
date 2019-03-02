@@ -7,15 +7,15 @@
   - Basics of statsmodels.api.OLS    
   - Basics of matplotlib.pyplot
 
-##### 2 - Import Libraries:
-- If you want to write your own program to predict Simple Linear Regression you need to import the needed libraries first
+#### 2 - Import Libraries:
+- If you want to write your own program to predict Simple Linear Regression you need to import the needed libraries first.
 
 <p align="center">
   	<img width="556" height="119" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Simple%20Linear%20Regression/References/python-1.JPG?raw=true">
 </p>
 
 #### 3 - Import Data-set:
-- Importing our data-set is the next step, once we imported our data-set we need to Independent Variable(IV) and Dependent Variable(DV) out of data-set.
+- Importing our data-set is the next step, once we imported our data-set we need to identify Independent Variable(IV) and Dependent Variable(DV) out of data-set.
 - Here we are using **Pandas** library to Import our data-set from the directory, it is recommended to keep the data-set in same directory where the python file is saved.
 - We are specifying required No.of rows and columns using pandas.iloc method.
 - Here in **[:, :-1]**, **:** refers to fetch all rows from our data-set and **:-1** refers to fetch all columns other than last column, since we have only one column as IV in our data-set will fetch only one ndArray as **X**

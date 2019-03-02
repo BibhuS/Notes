@@ -123,8 +123,8 @@
   	<img width="157" height="78" src="https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/Formulas/sum%20of%20the%20squared%20residual%20errors.JPG?raw=true">
 </p>
  
-### 4 - Coefficient of Determination, r-squared:
-- Now we got the information need to calculate the Coefficient of our prediction.
+### 4 - Determination of r-square(Accuracy):
+- Now we got the information need to calculate the Accuracy of our model.
 - <b>SSR</b> is the "regression sum of squares" and quantifies how far the estimated sloped regression line, <b>y&#770;<sub>i</sub></b>, is from the horizontal "no relationship line," the sample mean or <b>y&#772;</b>.
 - <b>SSE</b> is the "error sum of squares" and quantifies how much the data points y<sub>i</sub>, vary around the estimated regression line, y&#770;<sub>i</sub>
 - <b>SST</b> is the "total sum of squares" and quantifies how much the data points, y<sub>i</sub> vary around their mean, <b>y&#772;</b>
