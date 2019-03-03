@@ -105,3 +105,7 @@
 ##### Reference URL:
 [To Understand Concepts Behind MLR - Video](https://www.youtube.com/watch?v=dQNpSa-bq4M&list=PLIeGtxpvyG-IqjoU8IiF0Yu1WtxNq_4z-)    
 [Use-case Solutions and References](https://github.com/ManikandanJeyabal/Workplace/tree/master/DataScience/Regression/Multi%20Linear%20Regression)
+
+##### Similar topics
+1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Simple%20Linear%20Regression#simple-linear-regression)
+2. [Polynomial Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Polynomial%20Regression#polynomial-regression)
