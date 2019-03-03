@@ -77,7 +77,11 @@
 - If you completed the above step, Congrats you have created your **PNR** machine learning model using Python.
 
 ### 4. Additional Use-cases:
+1. Create a Machine Learning model to summarize trend between Acceleration and MPG.[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Polynomial%20Regression/Dataset/carMPG.csv)
+2. Create a Machine Learning model to summarize trend between Employee Position and Salary.[[dataset.csv]](https://github.com/ManikandanJeyabal/Notes/blob/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Polynomial%20Regression/Dataset/Position_Salaries.csv)
 
+##### Reference URL:
+[Use case reference](https://github.com/ManikandanJeyabal/Workplace/tree/master/DataScience/Regression/Polynomial%20Regression)
 
 ##### Similar topics
 1. [Simple Linear Regression](https://github.com/ManikandanJeyabal/Notes/tree/master/Python%20%2B%20Machine%20Learning%20%2B%20Deep%20Learning/Machine%20Learning%20The%20Complete%20Reference/3-Regression%20Models/Simple%20Linear%20Regression#simple-linear-regression)
